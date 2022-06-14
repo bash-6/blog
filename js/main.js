@@ -5,13 +5,16 @@ function $$(tag) { return [...document.querySelectorAll(tag)]; }
 $('boton-menu').addEventListener('click',(e)=>{
 	let btn = $('boton-menu');
 	if (btn.classList.contains('open')) {
-		$('.navegacion-top').style.transform = 'translateX(0%)'
+		$('.navegacion-top').style.transform = 'translateX(-100%)'
+		//$('.navegacion-top').style.backgroundColor = 'rgba(0,0,0,.6)'
+		$('body').style.overflow = 'hidden'
 		btn.classList.remove('open');
 		btn.classList.add('close');
 	} else {
-		$('.navegacion-top').style.transform = 'translateX(-100%)'
+		$('.navegacion-top').style.transform = 'translateX(-200%)'
 		btn.classList.remove('close');
 		btn.classList.add('open');
+		$('body').style.overflow = 'auto'
 	}
 })
 
