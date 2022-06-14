@@ -316,6 +316,10 @@ img {
 	padding: 5px;
 	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.30);
 }
+
+.card-herramienta img {
+	height: 130px;
+}
 .card-herramienta:first-child {
 	/* background: #ffab40; */
 }
@@ -375,19 +379,34 @@ img {
 }
 
 .acerca {
-	background: #111;
+	/* background: #111; */
 	width: 90%;
 	margin-left: auto;margin-right: auto;
+	position: relative;
+	padding: 10px;
+	border-radius: 5px;
+}
+.light {
+	border: 1px solid #333;
+	color: #222;
+}
+.dark {
+	border: none;
+	color: #fff;
+}
+
+.acerca i {
+	font-size: 2.5rem;
+	position: absolute;
 }
 .acerca h2 {
 	text-align: center;
-	font-weight: 400;
+	font-weight: 500;
 	font-size: 1.3rem;
-	color: #999;
+
 }
 .acerca p {
 	line-height: 1.5;
-	color: #999;
 	padding: 10px;
 	font-size: 1rem;
 
@@ -396,13 +415,12 @@ img {
 	display: block;
 	text-align: center;
 	padding: 10px;
-	background: white;
 	border-radius: 10px;
-	color: #111;
-	font-weight: 700;
+	color: var(--acerca-color);
+	font-weight: 600;
 	text-decoration: none;
+	border: 1px solid;
 	width: 100px;
-	/* height: 20px; */
 	margin-left: auto;margin-right: auto;
 	margin-bottom: 20px;
 }

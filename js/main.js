@@ -38,3 +38,19 @@ $('#close-modal').addEventListener('click',()=>{
 	})
 	inputs[0].checked = 'true'
 })
+
+//cambiar tema a dark
+$('#theme').addEventListener('click',()=>{
+	if ($('.acerca').classList.contains('light')) {
+		$('.acerca').style.backgroundColor = '#222'
+		$('.acerca').style.color = '#fff'
+		$('.acerca').classList.remove('light')
+		$('.acerca').classList.add('dark')
+		
+	} else if($('.acerca').classList.contains('dark')){
+		$('.acerca').style.backgroundColor = '#fff'
+		$('.acerca').style.color = '#222'
+		$('.acerca').classList.remove('dark')
+		$('.acerca').classList.add('light')
+	}
+})
